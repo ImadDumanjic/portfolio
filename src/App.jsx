@@ -1,5 +1,5 @@
-import './App.css'
 import Portfolio from './pages/Portfolio'
+import './App.css'
 
 function App() {
   return (

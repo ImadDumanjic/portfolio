@@ -1,12 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap');
-
-/* ---------------------------------------------------
-   BASE THEME (IDENTICAL TO LOVABLE DEFAULT DARK MODE)
---------------------------------------------------- */
 @layer base {
   :root {
     --background: 222 47% 6%;
@@ -55,17 +52,9 @@
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
   }
-
-  /* Light/Dark toggle support (optional) */
-  .dark {
-    --background: 222 47% 6%;
-    --foreground: 210 40% 98%;
-  }
 }
 
-/* ---------------------------------------------------
-   GLOBAL RESETS
---------------------------------------------------- */
+
 @layer base {
   * {
     @apply border-border;
@@ -73,7 +62,7 @@
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
-    font-family: "Sora", sans-serif;
+    font-family: "Space Mono", monospace;
   }
 
   html {
@@ -81,9 +70,6 @@
   }
 }
 
-/* ---------------------------------------------------
-   COMPONENTS: Glass UI, Glow, Gradients...
---------------------------------------------------- */
 @layer components {
   .glass-card {
     @apply bg-card/50 backdrop-blur-xl border border-glass-border rounded-2xl;
@@ -164,18 +150,12 @@
   }
 }
 
-/* ---------------------------------------------------
-   UTILITIES
---------------------------------------------------- */
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
 
-/* ---------------------------------------------------
-   KEYFRAME ANIMATIONS
---------------------------------------------------- */
 @keyframes gradient-shift {
 
   0%,
@@ -271,24 +251,4 @@
 
 .delay-500 {
   animation-delay: 500ms;
-}
-
-@layer components {
-  .hero-button {
-    @apply px-6 py-2 rounded-xl font-bold justify-center text-sm text-primary-foreground shadow-lg transition-all duration-300;
-    background: linear-gradient(135deg,
-        hsl(var(--primary)),
-        hsl(var(--accent)));
-    box-shadow:
-      0 0 20px hsl(var(--primary) / 0.4),
-      0 0 40px hsl(var(--accent) / 0.3);
-  }
-
-  .hero-button:hover {
-    filter: brightness(1.1);
-    box-shadow:
-      0 0 25px hsl(var(--primary) / 0.6),
-      0 0 50px hsl(var(--accent) / 0.5);
-    transform: translateY(-2px);
-  }
 }

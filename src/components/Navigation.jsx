@@ -10,7 +10,7 @@ const navLinks = [
     { label: "Contact", href: "#contact" },
 ];
 
-export default function Navigation() {
+const Navigation = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -53,8 +53,8 @@ export default function Navigation() {
                             </a>
                         ))}
 
-                        <Button size="sm" asChild className="bg-primary font-semibold items-center justify-center text-primary-foreground hover:bg-primary/90">
-                            <a href="#contact" className="hero-button hidden md:inline-block font-bold">Get in Touch</a>
+                        <Button variant="hero" size="sm" asChild>
+                            <a href="#contact">Get in Touch</a>
                         </Button>
                     </div>
 
@@ -93,3 +93,5 @@ export default function Navigation() {
         </nav>
     );
 }
+
+export default Navigation;

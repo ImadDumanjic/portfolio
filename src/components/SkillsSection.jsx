@@ -60,22 +60,31 @@ const skills = [
     },
 ];
 
+const otherTech = [
+    "HTML5",
+    "CSS3",
+    "Git",
+    "REST APIs",
+    "Postman",
+    "Tailwind CSS",
+    "Docker"
+];
+
 const SkillsSection = () => {
     return (
         <section id="skills" className="py-24 relative overflow-hidden">
             {/* Background elements */}
-            <div className="absolute top-1/2 left-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl -translate-y-1/2" />
-            <div className="absolute top-1/2 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl -translate-y-1/2" />
+            <div className="absolute top-1/2 left-0 w-96 h-96 bg-primary/10 rounded-full blur-2xl -translate-y-1/2" />
+            <div className="absolute top-1/2 right-0 w-96 h-96 bg-accent/10 rounded-full blur-2xl -translate-y-1/2" />
 
             <div className="relative z-10 section-container">
                 <div className="text-center space-y-4 mb-16">
-                    <span className="text-primary font-semibold tracking-wider uppercase text-sm">Technical Expertise</span>
+                    <span className="text-primary font-semibold tracking-wider text-sm">TECHNICAL EXPERTISE</span>
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
                         Skills & <span className="gradient-text">Technologies</span>
                     </h2>
                     <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                        A comprehensive toolkit spanning full-stack development, artificial intelligence,
-                        and modern design principles.
+                        A comprehensive toolkit spanning full-stack development, artificial intelligence and modern design principles.
                     </p>
                 </div>
 
@@ -112,7 +121,7 @@ const SkillsSection = () => {
                     <div className="glass-card p-6">
                         <div className="flex flex-wrap items-center justify-center gap-4">
                             <span className="text-muted-foreground font-medium">Also experienced with:</span>
-                            {["HTML5", "CSS3", "Git", "REST APIs", "Agile", "Linux", "Docker"].map((tech) => (
+                            {otherTech.map((tech) => (
                                 <span
                                     key={tech}
                                     className="px-4 py-2 rounded-full bg-secondary/50 text-sm text-foreground border border-border hover:border-primary/50 transition-colors"

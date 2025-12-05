@@ -25,7 +25,7 @@ const milestones = [
     {
         icon: Waves,
         title: "Professional Swimming Career",
-        description: "14 years of competitive swimming with national medals and achievements",
+        description: "15 years of competitive swimming with national medals and achievements",
         year: "2008 - 2023",
         color: "text-neon-cyan"
     },

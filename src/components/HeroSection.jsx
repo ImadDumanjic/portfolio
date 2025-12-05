@@ -16,8 +16,8 @@ const HeroSection = () => {
             <div className="absolute bottom-32 right-20 text-accent/20 text-5xl font-mono animate-float delay-300">{"{}"}</div>
             <div className="absolute top-40 right-40 text-neon-cyan/10 text-4xl font-mono animate-float delay-500">AI</div>
 
-            <div className="relative z-10">
-                <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="relative z-10 container mx-auto px-4">
+                <div className="grid lg:grid-cols-2 gap-10 items-center">
                     {/* Text content */}
                     <div className="space-y-8 text-center lg:text-left">
                         <div className="space-y-4">
